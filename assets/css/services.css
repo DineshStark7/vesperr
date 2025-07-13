@@ -1,0 +1,110 @@
+  #hero {
+  background: url('https://invisiblegrillbalcony.com/wp-content/uploads/2024/11/Resize-5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.overlay-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.overlay-text p {
+  font-size: 18px;
+    color: #fff;
+}
+      /* Service Section */
+      #service-details h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #222;
+      }
+
+      #service-details .overview-text {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      /* Features Section */
+      .features-section {
+        background-color: #f4faff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      }
+
+      .features-section .features-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+      }
+
+      .features-section .feature-list {
+        list-style: none;
+        padding-left: 0;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .features-section .feature-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .features-section .feature-list li i {
+        color: #28a745;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      .cta-section {
+  background-color: #3498db;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cta-section p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.cta-section .btn {
+  background-color: #fff;
+  color: #3498dbc9;
+  border: none;
+  font-weight: 600;
+}
+
+.cta-section .btn:hover {
+  background-color: #e6e6e6;
+}
