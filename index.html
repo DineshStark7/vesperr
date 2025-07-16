@@ -62,36 +62,54 @@
   </head>
 
   <body class="index-page">
-   <header id="header" class="header sticky-top py-3">
-  <div class="container text-center">
-
-    <!-- Centered Logo -->
-    <a href="index.html" class="d-inline-block mb-3">
+<header id="header" class="header sticky-top py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo Center -->
+    <a href="index.html" class="d-inline-block mx-auto">
       <img src="assets/img/logo.png" alt="Rayan Safety Nets Logo" class="logo-img" />
     </a>
 
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-nav-toggle d-lg-none" id="menuToggle">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
 
-        <nav id="navmenu" class="navmenu">
-       <ul>
-  <li><a href="#hero" class="active">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#features">Why Us</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#portfolio">Portfolio</a></li>
-  <li><a href="#testimonials">Testimonials</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <a class="btn-getstarted" href="tel:+91 93927 52652">
-  <i class="bi bi-telephone-fill"></i> +91 93927 52652
-</a>
+  <!-- Nav Menu -->
+  <nav id="navmenu" class="navmenu">
+    <ul id="navList">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Why Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="desktop-only">
+        <a href="tel:+91 93927 52652"
+          style="
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(52,152,219,0.15);
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+          "
+          onmouseover="this.style.background='#217dbb';"
+          onmouseout="this.style.background='#3498db';"
+        >
+          <i class="fas fa-phone-alt me-2"></i>
+          +91 93927 52652
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-</ul>
 
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-       
-      </div>
-    </header>
 
     <main class="main">
       <!-- Hero Section -->
@@ -1846,10 +1864,10 @@
       <!-- Column 1: Logo + Contact + Social Media -->
       <div class="col-lg-4 col-md-6 text-center text-md-start">
         <img src="assets/img/logo.png" alt="Logo" class="footer-logo mb-3" />
-        <p><i class="bi bi-geo-alt-fill me-2"></i>Hyderabad, Telangana - 500072</p>
+         <p><i class="bi bi-geo-alt-fill me-2"></i>Vizag, Vijayawada, Hyderabad</p>
         <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:+919392752652">+91 93927 52652</a></p>
         <p><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/+91 9392752652">WhatsApp Us</a></p>
-        <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@rayansafetynets.com">info@rayansafetynets.com</a></p>
+        <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:contact@rayansafetynets.com">contact@rayansafetynets.com</a></p>
 
         <!-- Social Media -->
         <div class="contact-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
@@ -2032,6 +2050,15 @@
 
   rotateText();
 </script>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navmenu");
+
+  toggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
     <script>
       function sendToWhatsApp() {
         const name = document.getElementById("name").value;

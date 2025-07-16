@@ -568,6 +568,103 @@ h6 {
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
+/* Header Background */
+#header {
+  background: #effeff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Styling */
+.logo-img {
+  height: 70px;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation List */
+#navmenu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Navigation Links */
+#navmenu ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#navmenu ul li a:hover,
+#navmenu ul li a.active {
+  color: #00bcd4;
+}
+
+/* CTA Button */
+.btn-getstarted {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+
+}
+
+.btn-getstarted:hover {
+  background-color: #0097a7;
+}
+
+/* Mobile Toggle Icon */
+.mobile-nav-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Mobile Menu Responsive */
+@media (max-width: 991px) {
+  #navmenu {
+    display: none;
+  }
+
+  #navmenu.active {
+    display: block;
+   
+    padding: 20px 0;
+  }
+
+  #navmenu ul {
+    flex-direction: column;
+    gap: 1rem;
+  } .desktop-only {
+    display: none !important;
+  }
+
+  .btn-getstarted {
+    display: block;
+    margin: 10px auto 0;
+  }
+}
+
+/* Scroll Padding Fix for Anchor Targeting */
+body ,html{
+  scroll-padding-top: 100px;
+}
+
+/* Scroll-to-top Button */
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -596,74 +693,6 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-}
-/* Logo Styling */
-.logo-img {
-  height: 80px;
-  object-fit: contain;
-}
-
-/* Navigation */
-#navmenu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem; /* Adjust spacing between links */
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-#navmenu ul li a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 600;
-  
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-#navmenu ul li a:hover,
-#navmenu ul li a.active {
-  color: #00bcd4;
-}
-
-/* CTA Button */
-.btn-getstarted {
-  background-color: #00bcd4;
-  color: white;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn-getstarted:hover {
-  background-color: #0097a7;
-}
-
-/* Header Background */
-#header {
-  background: #effeff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.logo.d-flex {
-  padding: 10px 0;
-}
-.logo-img {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}.logo-img {
-  height: 70px;
-}
-.logo.d-flex {
-  padding: 5px 0;
-}
-section:first-of-type {
-  padding-top: 100px;
 }
 
 
