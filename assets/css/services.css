@@ -198,3 +198,79 @@
 .cta-section .btn:hover {
   background-color: #e6e6e6;
 }
+
+
+
+/* === Portfolio Page Styles === */
+.portfolio-page {
+  background: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section header */
+.section-header h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+}
+
+.section-header p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Portfolio grid items */
+.portfolio-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-item img {
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item h5 {
+  font-size: 1rem;
+  color: #333;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 767px) {
+  .section-header h2 {
+    font-size: 1.75rem;
+  }
+}
+.portfolio-call {
+  padding: 15px;
+  text-align: center;
+}
+
+.portfolio-call .btn {
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: #3498db;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-call .btn:hover {
+  background-color: #217dbb;
+}
