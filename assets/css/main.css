@@ -570,7 +570,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Header Background */
 #header {
-  background: #effeff;
+ background-color: var(--background-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -605,12 +605,12 @@ h6 {
 
 #navmenu ul li a:hover,
 #navmenu ul li a.active {
-  color: #00bcd4;
+  color: #3498db;
 }
 
 /* CTA Button */
 .btn-getstarted {
-  background-color: #00bcd4;
+  background-color: #3498db;
   color: white;
   padding: 10px 20px;
   font-weight: bold;
@@ -662,6 +662,7 @@ h6 {
 /* Scroll Padding Fix for Anchor Targeting */
 body ,html{
   scroll-padding-top: 100px;
+  
 }
 
 /* Scroll-to-top Button */
@@ -1574,7 +1575,7 @@ section,
 }
 
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background-color: var(--background-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px 30px 30px 60px;
@@ -1989,7 +1990,7 @@ section,
 }
 
 .faq .faq-item i {
-  color: var(--accent-color);
+  color: #3498db;;
   font-size: 18px;
   margin-right: 10px;
 }
